@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יומן מסע</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>יומן המסע שלי</h1>
+    </header>
+
+    <nav>
+        <a href="#day1">יום 1</a>
+    </nav>
+
+    <div class="timeline">
+
+        <a name="day1"></a>
+        <h2>יום 1</h2>
+
+        <div class="event">
+            <div class="event-dot"></div>
+            <div class="event-content">
+                <h2>נתב"ג -> אבו דאבי -> תאילנד</h2>
+                <div class="gallery">
+                    <img src="src/day1/1.jpeg" onclick="openLightbox(this.src)">
+                    <img src="src/day1/2.jpeg" onclick="openLightbox(this.src)">
+                    <img src="src/day1/3.jpeg" onclick="openLightbox(this.src)">
+                    <img src="src/day1/4.jpeg" onclick="openLightbox(this.src)">
+                    <img src="src/day1/5.jpeg" onclick="openLightbox(this.src)">
+                </div>
+                <p>יום מעייף של טיסות</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-button">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
